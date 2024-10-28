@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé tập tính</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Bé tập tính</h1>
+        <div class="row">
+            <label for="number1">Số thứ nhất</label>
+            <input type="text" id="number1" placeholder="Nhập số thứ nhất">
+            <div class="operations">
+                <input type="radio" id="add" name="operation" value="add">
+                <label for="add">Cộng</label>
+                <input type="radio" id="subtract" name="operation" value="subtract">
+                <label for="subtract">Trừ</label>
+            </div>
+        </div>
+        <div class="row">
+            <label for="number2">Số thứ hai</label>
+            <input type="text" id="number2" placeholder="Nhập số thứ hai">
+            <div class="operations">
+                <input type="radio" id="multiply" name="operation" value="multiply">
+                <label for="multiply">Nhân</label>
+                <input type="radio" id="divide" name="operation" value="divide">
+                <label for="divide">Chia</label>
+            </div>
+        </div>
+        <div class="row">
+            <label for="result">Kết quả</label>
+            <input type="text" id="result" readonly>
+            <button onclick="calculate()">Tính</button>
+        </div>
+        <div class="row">
+            <label for="notification">Thông báo</label>
+            <p id="notification"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

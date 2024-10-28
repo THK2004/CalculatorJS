@@ -1,0 +1,77 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 380px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 20%;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+    accent-color: gray;
+}
+
+.operations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.operations label {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+#notification {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
